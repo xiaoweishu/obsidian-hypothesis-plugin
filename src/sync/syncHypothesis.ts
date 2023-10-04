@@ -67,7 +67,7 @@ export default class SyncHypothesis {
     }
 
     private async syncArticle(article: Article): Promise<void> {
-
+        console.log("syncArticle: article->" + JSON.stringify(article));
         const createdNewArticle = await this.fileManager.saveArticle(article);
 
         if (createdNewArticle) {

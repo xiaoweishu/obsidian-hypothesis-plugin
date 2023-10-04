@@ -31,7 +31,7 @@ export default class ApiManager {
     }
   }
 
-  async getHighlights(lastSyncDate?: Date, limit = 2000) {
+  async getHighlights(lastSyncDate?: Date, limit = 20000) {
     let annotations = [];
 
     try {
